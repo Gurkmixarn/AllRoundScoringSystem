@@ -5,7 +5,7 @@ import common.InputResult;
 
 public class DecaShotPut {
 
-	private int score;
+	public int score;
 	private double A = 51.39;
 	private double B = 1.5;
 	private double C = 1.05;

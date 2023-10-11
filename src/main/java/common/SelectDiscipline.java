@@ -1,25 +1,9 @@
 package common;
 
+import decathlon.*;
+import heptathlon.*;
+
 import java.util.Scanner;
-
-import decathlon.Deca100M;
-import decathlon.Deca1500M;
-import decathlon.Deca110MHurdles;
-import decathlon.Deca400M;
-import decathlon.DecaDiscusThrow;
-import decathlon.DecaHighJump;
-import decathlon.DecaJavelinThrow;
-import decathlon.DecaLongJump;
-import decathlon.DecaShotPut;
-import decathlon.DecaPoleVault;
-
-import heptathlon.Hep100MHurdles;
-import heptathlon.Hep200M;
-import heptathlon.Hep800M;
-import heptathlon.HeptHightJump;
-import heptathlon.HeptJavelinThrow;
-import heptathlon.HeptLongJump;
-import heptathlon.HeptShotPut;
 
 public class SelectDiscipline {
 
@@ -44,7 +28,7 @@ public class SelectDiscipline {
 	HeptLongJump hepLongJump = new HeptLongJump();
 	HeptShotPut hepShotPut = new HeptShotPut();
 	HeptJavelinThrow hepJavelinThrow = new HeptJavelinThrow();
-	
+
 	//Receive input	of selection of discipline.
 
 	public void inputSelection() {
@@ -67,62 +51,62 @@ public class SelectDiscipline {
 	// Check input of discipline.
 	public void makeSelection() {
 		switch (disciplineSelected) {
-		case 1:
-			deca100M.calculateResult(inputResult.enterResult());
-			break;
-		case 2:
-			deca400M.calculateResult(inputResult.enterResult());
-			break;
-		case 3:
-			deca110MHurdles.calculateResult(inputResult.enterResult());
-			break;
-		case 4:
-			deca1500M.calculateResult(inputResult.enterResult());
-			break;
-		case 5:			
-			decaLongJump.calculateResult(inputResult.enterResult());
-			break;
-		case 6:
-			highJump.calculateResult(inputResult.enterResult());
-			break;
-		case 7:
-			poleVault.calculateResult(inputResult.enterResult());
-			break;
-		case 8:
-			discusThrow.calculateResult(inputResult.enterResult());
-			break;
-		case 9:
-			decaJavelinThrow.calculateResult(inputResult.enterResult());
-			break;
-		case 10:
-			decaShotPut.calculateResult(inputResult.enterResult());
-			break;
-		case 11:
-			hep200M.calculateResult(inputResult.enterResult());
-			break;
-		case 12:
-			hep800M.calculateResult(inputResult.enterResult());
-			break;
-		case 13:
-			hep100MHurdles.calculateResult(inputResult.enterResult());
-			break;
-		case 14:
-			hepHighJump.calculateResult(inputResult.enterResult());
-			break;
-		case 15:
-			hepLongJump.calculateResult(inputResult.enterResult());
-			break;
-		case 16:
-			hepShotPut.calculateResult(inputResult.enterResult());
-			break;
-		case 17:
-			hepJavelinThrow.calculateResult(inputResult.enterResult());
-			break;
-		default:
-			System.out.println("Invalid input, try again.");
-			System.out.println("");
-			inputSelection();
-			break;
+			case 1:
+				deca100M.calculateResult(inputResult.enterResult());
+				break;
+			case 2:
+				deca400M.calculateResult(inputResult.enterResult());
+				break;
+			case 3:
+				deca110MHurdles.calculateResult(inputResult.enterResult());
+				break;
+			case 4:
+				deca1500M.calculateResult(inputResult.enterResult());
+				break;
+			case 5:
+				decaLongJump.calculateResult(inputResult.enterResult());
+				break;
+			case 6:
+				highJump.calculateResult(inputResult.enterResult());
+				break;
+			case 7:
+				poleVault.calculateResult(inputResult.enterResult());
+				break;
+			case 8:
+				discusThrow.calculateResult(inputResult.enterResult());
+				break;
+			case 9:
+				decaJavelinThrow.calculateResult(inputResult.enterResult());
+				break;
+			case 10:
+				decaShotPut.calculateResult(inputResult.enterResult());
+				break;
+			case 11:
+				hep200M.calculateResult(inputResult.enterResult());
+				break;
+			case 12:
+				hep800M.calculateResult(inputResult.enterResult());
+				break;
+			case 13:
+				hep100MHurdles.calculateResult(inputResult.enterResult());
+				break;
+			case 14:
+				hepHighJump.calculateResult(inputResult.enterResult());
+				break;
+			case 15:
+				hepLongJump.calculateResult(inputResult.enterResult());
+				break;
+			case 16:
+				hepShotPut.calculateResult(inputResult.enterResult());
+				break;
+			case 17:
+				hepJavelinThrow.calculateResult(inputResult.enterResult());
+				break;
+			default:
+				System.out.println("Invalid input, try again.");
+				System.out.println("");
+				inputSelection();
+				break;
 		}
 	}
 
@@ -147,4 +131,6 @@ public class SelectDiscipline {
 		System.out.println("17. Heptathlon Javelin Throw.");
 	}
 
-}
+
+
+	}

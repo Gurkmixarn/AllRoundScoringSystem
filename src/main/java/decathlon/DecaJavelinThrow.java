@@ -5,7 +5,7 @@ import common.InputResult;
 
 public class DecaJavelinThrow {
 
-	private int score;
+	public int score;
 	private double A = 10.14;
 	private double B = 7;
 	private double C = 1.08;
