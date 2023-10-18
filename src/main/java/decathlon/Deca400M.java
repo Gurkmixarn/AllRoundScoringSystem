@@ -40,4 +40,7 @@ public class Deca400M {
 
 	}
 
+    public double getScore() {
+		return score;
+    }
 }

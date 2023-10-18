@@ -12,6 +12,10 @@ public class Deca100M {
 	CalcTrackAndField calc = new CalcTrackAndField();
 	InputResult inputResult = new InputResult();
 
+	public int getScore() {
+		return score;
+	}
+
 	// Calculate the score based on time. All running events.
 	public void calculateResult(double runningTime) {
 
