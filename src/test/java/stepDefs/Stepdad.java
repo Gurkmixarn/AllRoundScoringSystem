@@ -33,14 +33,14 @@ public class Stepdad {
         this.discipline = discipline;
         System.out.println("Wow " + discipline);
     }
-    @When("I score {double}")
+    @When("I get the result {double}")
     public void iScore(double score) {
         this.score = score;
         System.out.println("Wow " + score);
     }
 
 
-    @Then("I get the result {double}")
+    @Then("I score {double} points")
     public void iGetTheResult(double expectedResult) {
         switch (discipline){
             case "Deca100M" -> {
