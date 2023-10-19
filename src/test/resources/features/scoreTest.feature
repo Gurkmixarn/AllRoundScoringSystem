@@ -7,9 +7,9 @@ Feature: Testing score calculations
 
     Examples:
       | discipline      | resultMin | scoreMin |
-      | Deca100M        | 5.0       | 2640     |
-      | Deca110MHurdles | 10.0      | 1556     |
-      | Deca400M        | 20        | 2698     |
+      | Deca100M        | 17.8      | 1        |
+      | Deca110MHurdles | 28.5      | 0        |
+      | Deca400M        | 100       | 0        |
 
   Scenario Outline: Testing all middle calculations
     Given I compete in "<discipline>"
@@ -29,6 +29,6 @@ Feature: Testing score calculations
 
     Examples:
       | discipline      | resultMax | scoreMax |
-      | Deca100M        | 17.8      | 1        |
-      | Deca110MHurdles | 28.5      | 0        |
-      | Deca400M        | 100       | 0        |
+      | Deca100M        | 5.0       | 2640     |
+      | Deca110MHurdles | 10.0      | 1556     |
+      | Deca400M        | 20        | 2698     |
