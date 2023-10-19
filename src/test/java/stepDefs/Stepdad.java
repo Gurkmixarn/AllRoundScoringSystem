@@ -12,7 +12,7 @@ public class Stepdad {
     String discipline;
     double score;
 
-    Deca1500M deca1500M = new Deca1500M();
+
     DecaLongJump decaLongJump = new DecaLongJump();
     DecaHighJump highJump = new DecaHighJump();
     DecaDiscusThrow discusThrow = new DecaDiscusThrow();
@@ -57,6 +57,11 @@ public class Stepdad {
                 Deca400M deca400M = new Deca400M();
                 deca400M.calculateResult(score);
                 assertEquals(expectedResult, deca400M.getScore(), 0.01);
+            }
+            case "Deca1500M" -> {
+                Deca1500M deca1500M = new Deca1500M();
+                deca1500M.calculateResult(score);
+                assertEquals(expectedResult, deca1500M.getScore(), 0.01);
             }
         }
 

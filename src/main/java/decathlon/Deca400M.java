@@ -39,7 +39,6 @@ public class Deca400M {
 		System.out.println("The result is: " + score);
 
 	}
-
     public double getScore() {
 		return score;
     }
