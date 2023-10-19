@@ -33,30 +33,30 @@ public class Stepdad {
         this.discipline = discipline;
         System.out.println("Wow " + discipline);
     }
+
     @When("I get the result {double}")
     public void iScore(double score) {
         this.score = score;
         System.out.println("Wow " + score);
     }
 
-
     @Then("I score {double} points")
     public void iGetTheResult(double expectedResult) {
-        switch (discipline){
+        switch (discipline) {
             case "Deca100M" -> {
                 Deca100M deca100M = new Deca100M();
                 deca100M.calculateResult(score);
-                assertEquals(expectedResult,deca100M.getScore() , 0.01);
+                assertEquals(expectedResult, deca100M.getScore(), 0.01);
             }
             case "Deca110MHurdles" -> {
                 Deca110MHurdles deca110MHurdles = new Deca110MHurdles();
                 deca110MHurdles.calculateResult(score);
-                assertEquals(expectedResult,deca110MHurdles.getScore() , 0.01);
+                assertEquals(expectedResult, deca110MHurdles.getScore(), 0.01);
             }
             case "Deca400M" -> {
                 Deca400M deca400M = new Deca400M();
                 deca400M.calculateResult(score);
-                assertEquals(expectedResult,deca400M.getScore() , 0.01);
+                assertEquals(expectedResult, deca400M.getScore(), 0.01);
             }
         }
 
