@@ -40,4 +40,7 @@ public class DecaHighJump {
 
 	}
 
+	public double getScore() {
+		return score;
+	}
 }

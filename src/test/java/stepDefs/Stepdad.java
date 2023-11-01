@@ -12,12 +12,7 @@ public class Stepdad {
     String discipline;
     double score;
 
-
-    DecaLongJump decaLongJump = new DecaLongJump();
-    DecaHighJump highJump = new DecaHighJump();
-    DecaDiscusThrow discusThrow = new DecaDiscusThrow();
     DecaShotPut decaShotPut = new DecaShotPut();
-    DecaJavelinThrow decaJavelinThrow = new DecaJavelinThrow();
     DecaPoleVault poleVault = new DecaPoleVault();
 
     Hep200M hep200M = new Hep200M();
@@ -31,13 +26,12 @@ public class Stepdad {
     @Given("I compete in {string}")
     public void iCompeteIn(String discipline) {
         this.discipline = discipline;
-        System.out.println("Wow " + discipline);
+        System.out.println(discipline);
     }
 
     @When("I get the result {double}")
     public void iScore(double score) {
         this.score = score;
-        System.out.println("Wow " + score);
     }
 
     @Then("I score {double} points")
@@ -63,6 +57,27 @@ public class Stepdad {
                 deca1500M.calculateResult(score);
                 assertEquals(expectedResult, deca1500M.getScore(), 0.01);
             }
+            case "DecaDiscusThrow" -> {
+                DecaDiscusThrow discusThrow = new DecaDiscusThrow();
+                discusThrow.calculateResult(score);
+                assertEquals(expectedResult, discusThrow.getScore(), 0.01);
+            }
+            case "DecaHighJump" -> {
+                DecaHighJump highJump = new DecaHighJump();
+                highJump.calculateResult(score);
+                assertEquals(expectedResult, highJump.getScore(), 0.01);
+            }
+            case "DecaJavelinThrow" -> {
+                DecaJavelinThrow decaJavelinThrow = new DecaJavelinThrow();
+                decaJavelinThrow.calculateResult(score);
+                assertEquals(expectedResult, decaJavelinThrow.getScore(), 0.01);
+            }
+            case "DecaLongJump" -> {
+                DecaLongJump decaLongJump = new DecaLongJump();
+                decaLongJump.calculateResult(score);
+                assertEquals(expectedResult, decaLongJump.getScore(), 0.01);
+            }
+
         }
 
     }

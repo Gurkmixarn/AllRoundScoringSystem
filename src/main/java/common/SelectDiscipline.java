@@ -32,9 +32,9 @@ public class SelectDiscipline {
 	//Receive input	of selection of discipline.
 
 	public void inputSelection() {
-		System.out.println("Select discipline.");
+		System.out.println("Please select discipline below:");
 		printDisciplines();
-
+		System.out.print("Please type your number of choice here (1-17): ");
 		try {
 
 			disciplineSelected = Integer.parseInt(sc.nextLine());

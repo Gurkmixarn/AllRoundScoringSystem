@@ -41,4 +41,7 @@ public class DecaJavelinThrow {
 
 	}
 
+	public double getScore() {
+		return score;
+	}
 }
