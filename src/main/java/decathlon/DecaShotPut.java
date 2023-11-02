@@ -41,4 +41,7 @@ public class DecaShotPut {
 
 	}
 
+	public double getScore() {
+		return score;
+	}
 }
