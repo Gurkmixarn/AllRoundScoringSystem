@@ -34,10 +34,10 @@ public class DecaLongJump {
 				}
 			} catch (Exception e) {
 
-				System.out.println("Please enter numbers");
+				System.out.println("Please only enter numbers.");
 			}
 		}
-		System.out.println("The result is: " + score);
+		System.out.println("The score is: " + score);
 	}
 
 	public double getScore() {

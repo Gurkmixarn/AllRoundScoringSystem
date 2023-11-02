@@ -23,6 +23,7 @@ public class Hep800M {
 					System.out.println("Value too low");
 					runningTime = inputResult.enterResult();
 				} else if (runningTime > 250.79) {
+
 					// competitor gets 1 point in 250.79 sec
 					System.out.println("Value too high");
 					runningTime = inputResult.enterResult();
@@ -32,10 +33,10 @@ public class Hep800M {
 				}
 			} catch (Exception e) {
 
-				System.out.println("Please enter numbers");
+				System.out.println("Please only enter numbers.");
 			}
 		}
-		System.out.println("The result is " + score);
+		System.out.println("The score is: " + score);
 
 	}
 
