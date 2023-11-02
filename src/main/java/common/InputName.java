@@ -14,10 +14,11 @@ public class InputName {
 		Scanner sc = new Scanner(System.in);
 		
 		while (active) {
-			System.out.println("Please enter the competitor's name:");
+			System.out.println("");
+			System.out.print("Please enter the competitor's name: ");
 			compName = sc.nextLine();
 			if (!compName.matches(".*[a-�A-�]")) {
-				System.out.println("Only use letters when putting in competitors name.");
+				System.out.println("Please only use letters when typing in competitor's name.");
 
 			} else {
 				active = false;
