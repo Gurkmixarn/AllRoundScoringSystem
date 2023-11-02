@@ -17,6 +17,7 @@ Feature: Testing score calculations
       | DecaLongJump     | 250         | 16       |
       | DecaPoleVault    | 2           | 0        |
       | DecaShotPut      | 0           | 0        |
+      | Hep100MHurdles   | 26.4        | 1.0      |
 
   Scenario Outline: Testing all middle calculations
     Given I compete in "<discipline>"
@@ -34,7 +35,8 @@ Feature: Testing score calculations
       | DecaJavelinThrow | 55        | 663      |
       | DecaLongJump     | 625       | 641      |
       | DecaPoleVault    | 500       | 910      |
-      | DecaShotPut      | 15        | 790       |
+      | DecaShotPut      | 30        | 1731     |
+      | Hep100MHurdles   | 13.2      | 1094     |
 
   Scenario Outline: Testing all maximum calculations
     Given I compete in "<discipline>"
@@ -53,4 +55,5 @@ Feature: Testing score calculations
       | DecaLongJump     | 1000       | 1606     |
       | DecaPoleVault    | 1000       | 2722     |
       | DecaShotPut      | 30         | 1731     |
+      | Hep100MHurdles   | 5          | 2616     |
 

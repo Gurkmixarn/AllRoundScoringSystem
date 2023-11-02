@@ -88,10 +88,15 @@ public class Stepdad {
             case "DecaShotPut" -> {
                 DecaShotPut decaShotPut = new DecaShotPut();
                 decaShotPut.calculateResult(score);
-                assertEquals(expectedResult, decaShotPut.getScore(),0.01);
+                assertEquals(expectedResult, decaShotPut.getScore(), 0.01);
+            }
+            case "Hep100MHurdles" -> {
+                Hep100MHurdles hep100MHurdles = new Hep100MHurdles();
+                hep100MHurdles.calculateResult(score);
+                assertEquals(expectedResult, hep100MHurdles.getScore(), 0.01);
+
             }
 
         }
-
     }
 }

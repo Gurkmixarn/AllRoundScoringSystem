@@ -40,4 +40,10 @@ public class Hep100MHurdles {
 
 	}
 
-}
+	public double getScore() {
+		return score;
+	}
+
+
+	}
+

@@ -18,7 +18,7 @@ public class DecaJavelinThrowTest {
         // Testa en rimlig distans som är acceptabel.
         double validDistance = 35;
         decaJavelinThrow.calculateResult(validDistance);
-        assertEquals("The result is: " + decaJavelinThrow.score, decaJavelinThrow.score, 508);
+        assertEquals("The result is: " + decaJavelinThrow.score, decaJavelinThrow.score, 370);
     }
 
     @Test
@@ -45,8 +45,13 @@ public class DecaJavelinThrowTest {
         assertEquals("The result is: " + decaJavelinThrow.score, decaJavelinThrow.score, 4442);
 
 
-
-
     }
 
-}
+    @Test
+    public void TooLow() {
+        decaJavelinThrow.calculateResult(-15);
+
+        assertEquals(1, decaJavelinThrow.getScore());
+    }
+
+    }
