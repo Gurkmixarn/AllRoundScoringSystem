@@ -5,6 +5,7 @@ import heptathlon.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.poi.ss.formula.ptg.ScalarConstantPtg;
 
 import static org.junit.Assert.assertEquals;
 
@@ -76,6 +77,18 @@ public class Stepdad {
                 DecaLongJump decaLongJump = new DecaLongJump();
                 decaLongJump.calculateResult(score);
                 assertEquals(expectedResult, decaLongJump.getScore(), 0.01);
+            }
+            case "DecaPoleVault" -> {
+                DecaPoleVault poleVault = new DecaPoleVault();
+                poleVault.calculateResult(score);
+                assertEquals(expectedResult, poleVault.getScore(), 0.01);
+
+
+            }
+            case "DecaShotPut" -> {
+                DecaShotPut decaShotPut = new DecaShotPut();
+                decaShotPut.calculateResult(score);
+                assertEquals(expectedResult, decaShotPut.getScore(),0.01);
             }
 
         }

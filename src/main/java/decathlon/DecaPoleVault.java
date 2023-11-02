@@ -42,4 +42,8 @@ public class DecaPoleVault {
 		System.out.println("The result is: " + score);
 	}
 
-}
+	public double getScore() {
+		return score;
+	}
+	}
+
