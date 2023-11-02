@@ -15,8 +15,8 @@ Feature: Testing score calculations
       | DecaHighJump     | 0           | 0        |
       | DecaJavelinThrow | 0           | 0        |
       | DecaLongJump     | 250         | 16       |
-      | DecaPoleVault    | 1000        | 0        |
-      | DecaShotPut      | 15          | 0        |
+      | DecaPoleVault    | 2           | 0        |
+      | DecaShotPut      | 0           | 0        |
 
   Scenario Outline: Testing all middle calculations
     Given I compete in "<discipline>"
@@ -33,8 +33,8 @@ Feature: Testing score calculations
       | DecaHighJump     | 150       | 389      |
       | DecaJavelinThrow | 55        | 663      |
       | DecaLongJump     | 625       | 641      |
-      | DecaPoleVault    | 500       | 910        |
-      | DecaShotPut      | 5         | 191      |
+      | DecaPoleVault    | 500       | 910      |
+      | DecaShotPut      | 15        | 790       |
 
   Scenario Outline: Testing all maximum calculations
     Given I compete in "<discipline>"
@@ -52,4 +52,5 @@ Feature: Testing score calculations
       | DecaJavelinThrow | 110        | 1513     |
       | DecaLongJump     | 1000       | 1606     |
       | DecaPoleVault    | 1000       | 2722     |
-      | DecaShotPut      | 15         | 0        |
+      | DecaShotPut      | 30         | 1731     |
+
