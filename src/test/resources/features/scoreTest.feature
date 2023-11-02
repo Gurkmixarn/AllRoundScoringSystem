@@ -2,21 +2,21 @@ Feature: Testing score calculations
 
   Scenario Outline: Testing all minimum calculations
     Given I compete in "<discipline>"
-    When I get the result <resultMin>
+    When I get the result <resultWorst>
     Then I score <scoreMin> points
 
     Examples:
-      | discipline       | resultMin | scoreMin |
-      | Deca100M         | 17.8      | 1        |
-      | Deca110MHurdles  | 28.5      | 0        |
-      | Deca400M         | 100.0     | 0        |
-      | Deca1500M        | 7.0       | 3346     |
-      | DecaDiscusThrow  | 0         | 0        |
-      | DecaHighJump     | 0         | 0        |
-      | DecaJavelinThrow | 0         | 0        |
-      | DecaLongJump     | 250       | 16       |
+      | discipline       | resultWorst | scoreMin |
+      | Deca100M         | 17.8        | 1        |
+      | Deca110MHurdles  | 28.5        | 0        |
+      | Deca400M         | 100.0       | 0        |
+      | Deca1500M        | 7.0         | 3346     |
+      | DecaDiscusThrow  | 0           | 0        |
+      | DecaHighJump     | 0           | 0        |
+      | DecaJavelinThrow | 0           | 0        |
+      | DecaLongJump     | 250         | 16       |
       | DecaPoleVault    | 1000        | 0        |
-      | DecaShotPut      | 15        | 0        |
+      | DecaShotPut      | 15          | 0        |
 
   Scenario Outline: Testing all middle calculations
     Given I compete in "<discipline>"
@@ -38,18 +38,18 @@ Feature: Testing score calculations
 
   Scenario Outline: Testing all maximum calculations
     Given I compete in "<discipline>"
-    When I get the result <resultMax>
+    When I get the result <resultBest>
     Then I score <scoreMax> points
 
     Examples:
-      | discipline       | resultMax | scoreMax |
-      | Deca100M         | 5.0       | 2640     |
-      | Deca110MHurdles  | 10.0      | 1556     |
-      | Deca400M         | 20.0      | 2698     |
-      | Deca1500M        | 2         | 3412     |
-      | DecaDiscusThrow  | 85        | 1622     |
-      | DecaHighJump     | 300       | 1852     |
-      | DecaJavelinThrow | 110       | 1513     |
-      | DecaLongJump     | 1000      | 1606     |
-      | DecaPoleVault    | 1000      | 2722     |
-      | DecaShotPut      | 15        | 0        |
+      | discipline       | resultBest | scoreMax |
+      | Deca100M         | 5.0        | 2640     |
+      | Deca110MHurdles  | 10.0       | 1556     |
+      | Deca400M         | 20.0       | 2698     |
+      | Deca1500M        | 2          | 3412     |
+      | DecaDiscusThrow  | 85         | 1622     |
+      | DecaHighJump     | 300        | 1852     |
+      | DecaJavelinThrow | 110        | 1513     |
+      | DecaLongJump     | 1000       | 1606     |
+      | DecaPoleVault    | 1000       | 2722     |
+      | DecaShotPut      | 15         | 0        |
