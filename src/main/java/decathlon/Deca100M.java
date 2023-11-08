@@ -9,6 +9,8 @@ public class Deca100M {
 	private double B = 18;
 	private double C = 1.81;
 	boolean active = true;
+
+
 	CalcTrackAndField calc = new CalcTrackAndField();
 	InputResult inputResult = new InputResult();
 
@@ -20,7 +22,7 @@ public class Deca100M {
 	public void calculateResult(double runningTime) {
 
 		while (active) {
-
+			System.out.println("Does this run?");
 			try {
 				// Acceptable values.
 				if (runningTime < 5) {
