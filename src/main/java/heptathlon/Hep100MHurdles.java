@@ -25,7 +25,7 @@ public class Hep100MHurdles {
 					runningTime = inputResult.enterResult();
 				} else if (runningTime > 26.4) {
 					System.out.println("Value too high");
-					//runningTime = inputResult.enterResult();
+					runningTime = inputResult.enterResult();
 				} else {
 
 					score = calc.calculateTrack(A, B, C, runningTime);
@@ -33,11 +33,17 @@ public class Hep100MHurdles {
 				}
 			} catch (Exception e) {
 
-				System.out.println("Please enter numbers");
+				System.out.println("Please only enter numbers.");
 			}
 		}
-		System.out.println("The result is " + score);
+		System.out.println("The score is: " + score);
 
 	}
 
+	public double getScore() {
+		return score;
+	}
+
+
 }
+
