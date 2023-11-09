@@ -32,9 +32,10 @@ public class SelectDiscipline {
 	//Receive input	of selection of discipline.
 
 	public void inputSelection() {
-		System.out.println("Select discipline.");
+		System.out.println("");
+		System.out.println("Please select discipline below:");
 		printDisciplines();
-
+		System.out.print("Please type your number of choice here (1-17): ");
 		try {
 
 			disciplineSelected = Integer.parseInt(sc.nextLine());
@@ -122,13 +123,13 @@ public class SelectDiscipline {
 		System.out.println("8. Decathlon Discus Throw. (Measured in meters)");
 		System.out.println("9. Decathlon Javelin Throw. (Measured in meters)");
 		System.out.println("10. Decathlon Shot Put. (Measured in meters)");
-		System.out.println("11. Heptathlon 200 meters.");
-		System.out.println("12. Heptathlon 800 meters.");
-		System.out.println("13. Heptathlon 100 meters hurdles.");
-		System.out.println("14. Heptathlon High Jump.");
-		System.out.println("15. Heptathlon Long Jump.");
-		System.out.println("16. Heptathlon Shot Put.");
-		System.out.println("17. Heptathlon Javelin Throw.");
+		System.out.println("11. Heptathlon 200 meters.(Measured in seconds)");
+		System.out.println("12. Heptathlon 800 meters.(Measured in seconds)");
+		System.out.println("13. Heptathlon 100 meters hurdles.(Measured in seconds)");
+		System.out.println("14. Heptathlon High Jump. (Measured in centimeters)");
+		System.out.println("15. Heptathlon Long Jump. (Measured in centimeters)");
+		System.out.println("16. Heptathlon Shot Put. (Measured in meters)");
+		System.out.println("17. Heptathlon Javelin Throw. (Measured in meters)");
 	}
 
 
