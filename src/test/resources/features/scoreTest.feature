@@ -76,3 +76,4 @@ Feature: Testing score calculations
       | HeptLongJump     | 0          | 1.0      |
       | HeptShotPut      | 5          | 1.0      |
 
+

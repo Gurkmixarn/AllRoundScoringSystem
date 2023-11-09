@@ -117,7 +117,7 @@ public class Stepdad {
                 heptJavelinThrow.calculateResult(score);
                 assertEquals(expectedResult, heptJavelinThrow.getScore(), 0.01);
 
-
+// king
             }
             case "HeptLongJump" -> {
                 HeptLongJump heptLongJump = new HeptLongJump();
