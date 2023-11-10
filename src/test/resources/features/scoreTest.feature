@@ -20,10 +20,10 @@ Feature: Testing score calculations
       | Hep100MHurdles   | 26.4        | 1.0      |
       | Hep200M          | 42.08       | 1.0      |
       | Hep800M          | 250.79      | 1.0      |
-      | HeptHightJump    | 270         | 1.0      |
-      | HeptJavelinThrow | 100         | 1.0      |
-      | HeptLongJump     | 400         | 1.0      |
-      | HeptShotPut      | 100         | 1.0      |
+      | HeptHightJump    | 75.7        | 1.0      |
+      | HeptJavelinThrow | 0           | 0        |
+      | HeptLongJump     | 0           | 0        |
+      | HeptShotPut      | 5           | 208      |
 
   Scenario Outline: Testing all middle calculations
     Given I compete in "<discipline>"
@@ -43,12 +43,12 @@ Feature: Testing score calculations
       | DecaPoleVault    | 500       | 910      |
       | DecaShotPut      | 30        | 1731     |
       | Hep100MHurdles   | 13.2      | 1094     |
-      | Hep200M          | 21,04     | 1.0      |
-      | Hep800M          | 125,395   | 1.0      |
-      | HeptHightJump    | 135       | 1.0      |
-      | HeptJavelinThrow | 50        | 1.0      |
-      | HeptLongJump     | 200       | 1.0      |
-      | HeptShotPut      | 50        | 1.0      |
+      | Hep200M          | 21.04     | 1283     |
+      | Hep800M          | 125.395   | 1033     |
+      | HeptHightJump    | 135       | 460      |
+      | HeptJavelinThrow | 50        | 860      |
+      | HeptLongJump     | 200       | 0        |
+      | HeptShotPut      | 50        | 3298     |
 
 
   Scenario Outline: Testing all maximum calculations
@@ -69,11 +69,11 @@ Feature: Testing score calculations
       | DecaPoleVault    | 1000       | 2722     |
       | DecaShotPut      | 30         | 1731     |
       | Hep100MHurdles   | 5          | 2616     |
-      | Hep200M          | 14         | 1.0      |
-      | Hep800M          | 70         | 1.0      |
-      | HeptHightJump    | 75.7       | 1.0      |
-      | HeptJavelinThrow | 0          | 1.0      |
-      | HeptLongJump     | 0          | 1.0      |
-      | HeptShotPut      | 5          | 1.0      |
+      | Hep200M          | 14         | 2145     |
+      | Hep800M          | 70         | 2026     |
+      | HeptHightJump    | 270        | 2254     |
+      | HeptJavelinThrow | 100        | 1845     |
+      | HeptLongJump     | 400        | 308      |
+      | HeptShotPut      | 100        | 6941     |
 
 

@@ -5,7 +5,7 @@ import heptathlon.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.poi.ss.formula.ptg.ScalarConstantPtg;
+
 
 import static org.junit.Assert.assertEquals;
 
@@ -117,7 +117,7 @@ public class Stepdad {
                 heptJavelinThrow.calculateResult(score);
                 assertEquals(expectedResult, heptJavelinThrow.getScore(), 0.01);
 
-// king
+
             }
             case "HeptLongJump" -> {
                 HeptLongJump heptLongJump = new HeptLongJump();

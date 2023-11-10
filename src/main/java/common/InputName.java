@@ -20,7 +20,7 @@ public class InputName {
 			if (compName.trim().isEmpty()) {
 				System.out.println("Competitor's name cannot be empty.");
 			} else if (!compName.matches("^[\\p{L} \\p{M}]+$")) {
-				System.out.println("Please only use letters, spaces, and åäöÅÄÖ when typing in the competitor's name.");
+				System.out.println("Only use letters when putting in competitors name..");
 			} else {
 				active = false;
 			}
