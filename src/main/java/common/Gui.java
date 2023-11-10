@@ -15,6 +15,7 @@ class MyFrame
 
     // Components of the Form
     private Container c;
+    double result;
     private JTextField txtName;
     private JLabel lblResult;
     private JTextField txtResult;
@@ -35,6 +36,10 @@ class MyFrame
     private String months[]
             = {"Hep100MHurdles", "Hep200M", "Hep800M", "HeptHightJump",
             "HeptJavelinThrow", "HeptLongJump", "HeptShotPut"};
+    private double decaMax[]
+            = {17.8};
+    private double decaMin[]
+            = {5};
 
     // constructor, to initialize the components
     // with default values.
@@ -121,7 +126,7 @@ class MyFrame
         btnSubmit.addActionListener(this);
         c.add(btnSubmit);
 
-        btnReset = new JButton("Reset");
+        btnReset = new JButton("Clear");
         btnReset.setFont(new Font("Arial", Font.PLAIN, 15));
         btnReset.setSize(100, 20);
         btnReset.setLocation(270, 300);
@@ -184,6 +189,12 @@ class MyFrame
         if (e.getSource() == btnSubmit) {
             //Placeholder if statement
             if (1 == 1) {
+                try{
+                    result = Double.parseDouble(txtResult.getText());
+                }catch (Exception error) {
+                    lblStatus.setText("Only numbers in result field!!");
+                    return;
+                }
                 String data1;
                 String data
                         = "Name: "
@@ -204,10 +215,18 @@ class MyFrame
                 Object selectedItem = CBDiscipline.getSelectedItem();
                 int score = 0;
                 if (selectedItem.equals("Deca100M")) {
-                    Deca100M deca100M = new Deca100M();
-                    double result = Double.parseDouble(txtResult.getText());
-                    deca100M.calculateResult(result);
-                    score = deca100M.getScore();
+                    if (decaMin[0] > result){
+                        lblStatus.setText("Result too damn low!");
+                        return;
+                    } else if (decaMax[0] < result) {
+                        lblStatus.setText("Result too damn high!");
+                        return;
+                    }else {
+                        Deca100M deca100M = new Deca100M();
+                        deca100M.calculateResult(result);
+                        score = deca100M.getScore();
+                    }
+
                 } else if (selectedItem.equals("Deca110MHurdles")) {
                     System.out.println("Plz work");
                 }
