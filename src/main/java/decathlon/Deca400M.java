@@ -21,10 +21,10 @@ public class Deca400M {
 			try {
 				// Acceptable values.
 				if (runningTime < 20) {
-					System.out.println("Value too low");
+					System.out.println("Value entered is too low.");
 					runningTime = inputResult.enterResult();
 				} else if (runningTime > 100) {
-					System.out.println("Value too high");
+					System.out.println("Value entered is too high.");
 					runningTime = inputResult.enterResult();
 				} else {
 

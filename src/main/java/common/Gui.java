@@ -10,9 +10,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class MyFrame
-        extends JFrame
-        implements ActionListener {
+public class Gui extends JFrame implements ActionListener {
 
     // Components of the Form
     private final Container c;
@@ -43,7 +41,7 @@ class MyFrame
 
     // constructor, to initialize the components
     // with default values.
-    public MyFrame() {
+    public Gui() {
         setTitle("All round scoring system");
         setBounds(300, 90, 900, 450);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -447,9 +445,4 @@ class MyFrame
 }
 
 // Driver Code
-class Registration {
 
-    public static void main(String[] args) throws Exception {
-        MyFrame f = new MyFrame();
-    }
-}

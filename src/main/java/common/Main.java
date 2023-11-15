@@ -17,6 +17,7 @@ public class Main {
 			String userInput;
 
 			while (true) {
+				System.out.println("");
 				System.out.print("Do you want to enter another competitor, please enter 'yes' or 'no': ");
 				userInput = scanner.nextLine().toLowerCase(); // Convert input to lowercase for case insensitivity
 
@@ -26,7 +27,7 @@ public class Main {
 					choice = false;
 					break;
 				} else {
-					System.out.println("Invalid input. Please enter 'yes' or 'no'.");
+					System.out.println("Invalid input. Please enter 'yes' or 'no': ");
 				}
 			}
 		}

@@ -21,11 +21,11 @@ public class DecaShotPut {
 			try {
 				// Acceptable values.
 				if (distance < 0) {
-					System.out.println("Value too low");
+					System.out.println("Value entered is too low.");
 					distance = inputResult.enterResult();
 				} else if (distance > 30) {
 
-					System.out.println("Value too high");
+					System.out.println("Value entered is too high.");
 					distance = inputResult.enterResult();
 				} else {
 
