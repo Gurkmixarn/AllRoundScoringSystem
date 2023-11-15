@@ -25,10 +25,10 @@ public class Deca110MHurdles {
 			try {
 				// Acceptable values.
 				if (runningTime < 10) {
-					System.out.println("Value too low");
+					System.out.println("Value entered is too low.");
 					runningTime = inputResult.enterResult();
 				} else if (runningTime > 28.5) {
-					System.out.println("Value too high");
+					System.out.println("Value entered is too high.");
 					runningTime = inputResult.enterResult();
 				} else {
 					score = calc.calculateTrack(A, B, C, runningTime);

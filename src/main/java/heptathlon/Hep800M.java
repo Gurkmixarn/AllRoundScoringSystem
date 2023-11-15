@@ -20,7 +20,7 @@ public class Hep800M {
 			try {
 				// Acceptable values.
 				if (runningTime < 70) {
-					System.out.println("Value too low");
+					System.out.println("Value entered is too low");
 					runningTime = inputResult.enterResult();
 				} else if (runningTime > 250.79) {
 

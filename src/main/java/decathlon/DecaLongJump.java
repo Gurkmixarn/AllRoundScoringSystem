@@ -20,11 +20,11 @@ public class DecaLongJump {
 			try {
 				// Acceptable values.
 				if (distance < 250) {
-					System.out.println("Value too low");
+					System.out.println("Value entered is too low.");
 					distance = inputResult.enterResult();
 				} else if (distance > 1000) {
 
-					System.out.println("Value too high");
+					System.out.println("Value entered is too high.");
 					distance = inputResult.enterResult();
 
 				} else {
