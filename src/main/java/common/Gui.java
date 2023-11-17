@@ -42,8 +42,8 @@ public class Gui extends JFrame implements ActionListener {
     // constructor, to initialize the components
     // with default values.
     public Gui() {
-        setTitle("All round scoring system");
-        setBounds(300, 90, 900, 450);
+        setTitle("All Round Scoring System");
+        setBounds(300, 90, 900, 500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
 
@@ -54,48 +54,48 @@ public class Gui extends JFrame implements ActionListener {
         JLabel lblTitle = new JLabel("Scoring form");
         lblTitle.setFont(new Font("Arial", Font.BOLD, 42));
         lblTitle.setForeground(Color.LIGHT_GRAY);
-        lblTitle.setSize(300, 45);
-        lblTitle.setLocation(300, 30);
+        lblTitle.setSize(300, 58);
+        lblTitle.setLocation(300, 20);
         c.add(lblTitle);
 
         JLabel lblName = new JLabel("Name:");
         lblName.setFont(new Font("Arial", Font.BOLD, 20));
         lblName.setForeground(Color.LIGHT_GRAY);
-        lblName.setSize(100, 20);
-        lblName.setLocation(100, 100);
+        lblName.setSize(100, 23);
+        lblName.setLocation(100, 113);
         c.add(lblName);
 
         txtName = new JTextField();
         txtName.setFont(new Font("Arial", Font.BOLD, 15));
         txtName.setBackground(Color.LIGHT_GRAY);
-        txtName.setSize(190, 20);
-        txtName.setLocation(200, 100);
+        txtName.setSize(190, 25);
+        txtName.setLocation(210, 110);
         c.add(txtName);
 
 
-        JLabel lblGender = new JLabel("Gender");
+        JLabel lblGender = new JLabel("Gender:");
         lblGender.setFont(new Font("Arial", Font.BOLD, 20));
         lblGender.setForeground(Color.LIGHT_GRAY);
-        lblGender.setSize(100, 20);
-        lblGender.setLocation(100, 150);
+        lblGender.setSize(100, 23);
+        lblGender.setLocation(100, 163);
         c.add(lblGender);
 
         rbMale = new JRadioButton("Male");
-        rbMale.setFont(new Font("Arial", Font.BOLD, 15));
+        rbMale.setFont(new Font("Arial", Font.BOLD, 17));
         rbMale.setBackground(Color.BLACK);
         rbMale.setForeground(Color.LIGHT_GRAY);
         rbMale.setSelected(true);
-        rbMale.setSize(75, 20);
-        rbMale.setLocation(200, 150);
+        rbMale.setSize(75, 25);
+        rbMale.setLocation(210, 160);
         c.add(rbMale);
 
         JRadioButton rbFemale = new JRadioButton("Female");
-        rbFemale.setFont(new Font("Arial", Font.BOLD, 15));
+        rbFemale.setFont(new Font("Arial", Font.BOLD, 17));
         rbFemale.setBackground(Color.BLACK);
         rbFemale.setForeground(Color.LIGHT_GRAY);
         rbFemale.setSelected(false);
-        rbFemale.setSize(80, 20);
-        rbFemale.setLocation(275, 150);
+        rbFemale.setSize(80, 25);
+        rbFemale.setLocation(285, 160);
         c.add(rbFemale);
 
         ButtonGroup btnGrpGender = new ButtonGroup();
@@ -105,49 +105,49 @@ public class Gui extends JFrame implements ActionListener {
         lblDiscipline = new JLabel("Discipline:");
         lblDiscipline.setFont(new Font("Arial", Font.BOLD, 20));
         lblDiscipline.setForeground(Color.LIGHT_GRAY);
-        lblDiscipline.setSize(100, 20);
-        lblDiscipline.setLocation(100, 200);
+        lblDiscipline.setSize(100, 23);
+        lblDiscipline.setLocation(100, 213);
         c.add(lblDiscipline);
 
         CBDiscipline = new JComboBox(decathlon);
         CBDiscipline.setFont(new Font("Arial", Font.PLAIN, 15));
-        CBDiscipline.setSize(150, 20);
-        CBDiscipline.setLocation(200, 200);
+        CBDiscipline.setSize(190, 25);
+        CBDiscipline.setLocation(210, 210);
         c.add(CBDiscipline);
 
         JLabel lblResult = new JLabel("Result:");
         lblResult.setFont(new Font("Arial", Font.BOLD, 20));
         lblResult.setForeground(Color.LIGHT_GRAY);
-        lblResult.setSize(100, 20);
-        lblResult.setLocation(100, 250);
+        lblResult.setSize(100, 23);
+        lblResult.setLocation(100, 268);
         c.add(lblResult);
 
         txtResult = new JTextField();
-        txtResult.setFont(new Font("Arial", Font.PLAIN, 15));
+        txtResult.setFont(new Font("Arial", Font.BOLD, 15));
         txtResult.setBackground(Color.LIGHT_GRAY);
-        txtResult.setSize(150, 20);
-        txtResult.setLocation(200, 250);
+        txtResult.setSize(190, 25);
+        txtResult.setLocation(210, 265);
         c.add(txtResult);
 
         btnSubmit = new JButton("Submit");
-        btnSubmit.setFont(new Font("Arial", Font.PLAIN, 15));
-        btnSubmit.setSize(100, 20);
-        btnSubmit.setLocation(150, 300);
+        btnSubmit.setFont(new Font("Arial", Font.BOLD, 16));
+        btnSubmit.setSize(100, 30);
+        btnSubmit.setLocation(180, 340);
         btnSubmit.addActionListener(this);
         c.add(btnSubmit);
 
         btnReset = new JButton("Clear");
-        btnReset.setFont(new Font("Arial", Font.PLAIN, 15));
-        btnReset.setSize(100, 20);
-        btnReset.setLocation(270, 300);
+        btnReset.setFont(new Font("Arial", Font.BOLD, 16));
+        btnReset.setSize(100, 30);
+        btnReset.setLocation(300, 340);
         btnReset.addActionListener(this);
         c.add(btnReset);
 
         txtOutput = new JTextArea();
-        txtOutput.setFont(new Font("Arial", Font.BOLD, 15));
+        txtOutput.setFont(new Font("Arial", Font.BOLD, 17));
         txtOutput.setBackground(Color.LIGHT_GRAY);
-        txtOutput.setSize(300, 200);
-        txtOutput.setLocation(500, 100);
+        txtOutput.setSize(300, 180);
+        txtOutput.setLocation(500, 110);
         txtOutput.setLineWrap(true);
         txtOutput.setEditable(false);
         c.add(txtOutput);
@@ -156,7 +156,7 @@ public class Gui extends JFrame implements ActionListener {
         lblStatus.setFont(new Font("Arial", Font.BOLD, 20));
         lblStatus.setForeground(Color.LIGHT_GRAY);
         lblStatus.setSize(500, 25);
-        lblStatus.setLocation(100, 350);
+        lblStatus.setLocation(100, 390);
         c.add(lblStatus);
 
         ActionListener maleListener = new ActionListener() {
@@ -165,8 +165,8 @@ public class Gui extends JFrame implements ActionListener {
                 c.remove(CBDiscipline);
                 CBDiscipline = new JComboBox(decathlon);
                 CBDiscipline.setFont(new Font("Arial", Font.PLAIN, 15));
-                CBDiscipline.setSize(150, 20);
-                CBDiscipline.setLocation(200, 200);
+                CBDiscipline.setSize(190, 25);
+                CBDiscipline.setLocation(210, 210);
                 c.add(CBDiscipline);
                 c.revalidate(); // Revalidate the container
                 c.repaint();    // Repaint the container
@@ -179,8 +179,8 @@ public class Gui extends JFrame implements ActionListener {
                 c.remove(CBDiscipline);
                 CBDiscipline = new JComboBox(heptathlon);
                 CBDiscipline.setFont(new Font("Arial", Font.PLAIN, 15));
-                CBDiscipline.setSize(150, 20);
-                CBDiscipline.setLocation(200, 200);
+                CBDiscipline.setSize(190, 25);
+                CBDiscipline.setLocation(210, 210);
                 c.add(CBDiscipline);
                 c.revalidate(); // Revalidate the container
                 c.repaint();    // Repaint the container
