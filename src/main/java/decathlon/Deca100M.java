@@ -38,7 +38,7 @@ public class Deca100M {
 				}
 			} catch (Exception e) {
 
-				System.out.println("Please enter numbers.");
+				System.out.println("Please only enter numbers.");
 			}
 		}
 		System.out.println("The score is: " + score);

@@ -48,42 +48,51 @@ public class Gui extends JFrame implements ActionListener {
         setResizable(false);
 
         c = getContentPane();
+        c.setBackground(Color.BLACK);
         c.setLayout(null);
 
         JLabel lblTitle = new JLabel("Scoring form");
-        lblTitle.setFont(new Font("Arial", Font.PLAIN, 30));
-        lblTitle.setSize(300, 30);
+        lblTitle.setFont(new Font("Arial", Font.BOLD, 42));
+        lblTitle.setForeground(Color.LIGHT_GRAY);
+        lblTitle.setSize(300, 45);
         lblTitle.setLocation(300, 30);
         c.add(lblTitle);
 
         JLabel lblName = new JLabel("Name:");
-        lblName.setFont(new Font("Arial", Font.PLAIN, 20));
+        lblName.setFont(new Font("Arial", Font.BOLD, 20));
+        lblName.setForeground(Color.LIGHT_GRAY);
         lblName.setSize(100, 20);
         lblName.setLocation(100, 100);
         c.add(lblName);
 
         txtName = new JTextField();
-        txtName.setFont(new Font("Arial", Font.PLAIN, 15));
+        txtName.setFont(new Font("Arial", Font.BOLD, 15));
+        txtName.setBackground(Color.LIGHT_GRAY);
         txtName.setSize(190, 20);
         txtName.setLocation(200, 100);
         c.add(txtName);
 
 
         JLabel lblGender = new JLabel("Gender");
-        lblGender.setFont(new Font("Arial", Font.PLAIN, 20));
+        lblGender.setFont(new Font("Arial", Font.BOLD, 20));
+        lblGender.setForeground(Color.LIGHT_GRAY);
         lblGender.setSize(100, 20);
         lblGender.setLocation(100, 150);
         c.add(lblGender);
 
         rbMale = new JRadioButton("Male");
-        rbMale.setFont(new Font("Arial", Font.PLAIN, 15));
+        rbMale.setFont(new Font("Arial", Font.BOLD, 15));
+        rbMale.setBackground(Color.BLACK);
+        rbMale.setForeground(Color.LIGHT_GRAY);
         rbMale.setSelected(true);
         rbMale.setSize(75, 20);
         rbMale.setLocation(200, 150);
         c.add(rbMale);
 
         JRadioButton rbFemale = new JRadioButton("Female");
-        rbFemale.setFont(new Font("Arial", Font.PLAIN, 15));
+        rbFemale.setFont(new Font("Arial", Font.BOLD, 15));
+        rbFemale.setBackground(Color.BLACK);
+        rbFemale.setForeground(Color.LIGHT_GRAY);
         rbFemale.setSelected(false);
         rbFemale.setSize(80, 20);
         rbFemale.setLocation(275, 150);
@@ -94,7 +103,8 @@ public class Gui extends JFrame implements ActionListener {
         btnGrpGender.add(rbFemale);
 
         lblDiscipline = new JLabel("Discipline:");
-        lblDiscipline.setFont(new Font("Arial", Font.PLAIN, 20));
+        lblDiscipline.setFont(new Font("Arial", Font.BOLD, 20));
+        lblDiscipline.setForeground(Color.LIGHT_GRAY);
         lblDiscipline.setSize(100, 20);
         lblDiscipline.setLocation(100, 200);
         c.add(lblDiscipline);
@@ -106,13 +116,15 @@ public class Gui extends JFrame implements ActionListener {
         c.add(CBDiscipline);
 
         JLabel lblResult = new JLabel("Result:");
-        lblResult.setFont(new Font("Arial", Font.PLAIN, 20));
+        lblResult.setFont(new Font("Arial", Font.BOLD, 20));
+        lblResult.setForeground(Color.LIGHT_GRAY);
         lblResult.setSize(100, 20);
         lblResult.setLocation(100, 250);
         c.add(lblResult);
 
         txtResult = new JTextField();
         txtResult.setFont(new Font("Arial", Font.PLAIN, 15));
+        txtResult.setBackground(Color.LIGHT_GRAY);
         txtResult.setSize(150, 20);
         txtResult.setLocation(200, 250);
         c.add(txtResult);
@@ -132,7 +144,8 @@ public class Gui extends JFrame implements ActionListener {
         c.add(btnReset);
 
         txtOutput = new JTextArea();
-        txtOutput.setFont(new Font("Arial", Font.PLAIN, 15));
+        txtOutput.setFont(new Font("Arial", Font.BOLD, 15));
+        txtOutput.setBackground(Color.LIGHT_GRAY);
         txtOutput.setSize(300, 200);
         txtOutput.setLocation(500, 100);
         txtOutput.setLineWrap(true);
@@ -140,7 +153,8 @@ public class Gui extends JFrame implements ActionListener {
         c.add(txtOutput);
 
         lblStatus = new JLabel("");
-        lblStatus.setFont(new Font("Arial", Font.PLAIN, 20));
+        lblStatus.setFont(new Font("Arial", Font.BOLD, 20));
+        lblStatus.setForeground(Color.LIGHT_GRAY);
         lblStatus.setSize(500, 25);
         lblStatus.setLocation(100, 350);
         c.add(lblStatus);
@@ -444,5 +458,9 @@ public class Gui extends JFrame implements ActionListener {
     }
 }
 
-// Driver Code
+class Registration {
+    public static void main(String[] args) throws Exception {
+        Gui f = new Gui();
+    }
+}
 

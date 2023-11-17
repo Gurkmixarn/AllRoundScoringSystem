@@ -20,12 +20,12 @@ public class Hep800M {
 			try {
 				// Acceptable values.
 				if (runningTime < 70) {
-					System.out.println("Value entered is too low");
+					System.out.println("Value entered is too low.");
 					runningTime = inputResult.enterResult();
 				} else if (runningTime > 250.79) {
 
 					// competitor gets 1 point in 250.79 sec
-					System.out.println("Value too high");
+					System.out.println("Value entered is too high.");
 					runningTime = inputResult.enterResult();
 				} else {
 					score = calc.calculateTrack(A, B, C, runningTime);
